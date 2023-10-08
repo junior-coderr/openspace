@@ -1,0 +1,108 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+#header-text{
+    background: #373EF0;
+    background: linear-gradient(to bottom, #373EF0 48%, #FFFFFF 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.margin-fixed{
+    margin:0 60px;
+    padding-top: 10px;
+}
+.plex-sans{
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Keania One', cursive;
+font-family: 'Source Code Pro', monospace;
+}
+.blur{
+background: rgba(0,0,0, 0);
+/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+}
+.mont{
+font-family: 'Gabarito', cursive;
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Keania One', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Source Code Pro', monospace;
+}
+#rocket_png{
+    animation: fly .7s ease-out;
+}
+@keyframes fly {
+    from{
+        bottom:-90%;
+    }
+    to{
+        bottom: -20%;
+    }
+    
+}
+.skill-con:hover{
+    border-width: 2px;
+   border-color: #027FFF;
+}
+
+
+.skill-true{
+    border-width: 3px;
+   border-color: #027FFF;
+}
+
+.skill-true2{
+    border-width: 3px;
+   background-color: #027FFF;
+   color: white;
+}
+
+
+.skill-true3{
+    color: #027FFF;
+}
+
+.f{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.label{
+ font-size: 25px;
+}
+input{
+    outline: none;
+}
+.create-form input{
+    border:1px solid rgb(176, 176, 176);
+    width:500px;
+    padding: 10px;   
+    border-radius: 5px;
+}
+
+.skill-s-p{
+    font-size: 18px;
+}
+.skill-s-p p{
+    /* margin:0 5px; */
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: solid #5C61F2 1px;
+    flex-shrink: 0;
+}
+
+.p{
+    width:300px;
+    flex-shrink:0;
+    height:350px;
+    border:solid 1px #a0a0a0;
+    border-radius: 16px;
+    padding: 8px;
+}
+.p1{
+    background-color: #bbbbbb;
+    height: 150px;
+    border-radius: 14px;;
+}
+.h3{
+    font-size: 25px;
+    font-weight: 600;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/data/output.css">
+    <link rel="stylesheet" href="/data/css/general.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Keania+One&family=Source+Code+Pro&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@600&family=IBM+Plex+Sans:wght@500&family=Keania+One&family=Montserrat:wght@600&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <title>OpenSpace</title>
+</head>
+<body>
+<div class=" h-screen relative">
+
+{{!-- full page  --}}
+            {{!-- logo  --}}
+            <div class="px-[50px] py-[10px] bg-black"><h1 class="text-[40px] font-semibold tracking-[2px] text-white">Open<span id="header-text">Space</span></h1></div>
+            {{!-- logo  --}}
+<br>
+            {{!-- fixed section  --}}
+            <div class="margin-fixed">
+                {{!-- title  --}}
+                <h1 class="text-[65px] font-medium font-sans tracking-[2px]">What are your skills?</h1>    
+                {{!-- title  --}}
+<br>
+<br>
+                {{!-- skills  --}}
+                <div class="flex flex-wrap gap-x-[60px] gap-y-[30px] justify-center">
+
+                    <div onclick='chooseSkills(this)' class="skill-con flex flex-col justify-around items-center gap-y-4 w-[280px] h-[280px] bg-[#ececec] border-[1px] border-[#a2a2a2] rounded-[8px]">
+                        <img class="w-[220px]"  src="https://ik.imagekit.io/olky6f0qm/image-removebg-preview%20(4).png?updatedAt=1696728957515" alt="" srcset="">
+                        <h3 class="text-[28px] font-medium plex-sans">Coding</h3>
+                    </div>
+
+                    <div onclick='chooseSkills(this)' class="skill-con flex flex-col justify-around items-center gap-y-4 w-[280px] h-[280px] bg-[#ececec] border-[1px] border-[#a2a2a2] rounded-[8px]">
+                        <img class="w-[220px]"  src="https://ik.imagekit.io/olky6f0qm/Screenshot_2023-10-08_at_7.15.02_AM-removebg-preview.png?updatedAt=1696729679542" alt="" srcset="">
+                        <h3 class="text-[28px] font-medium plex-sans">UI/UX designer</h3>
+                    </div>
+
+                    <div onclick='chooseSkills(this)' class="skill-con flex flex-col justify-around items-center gap-y-4 w-[280px] h-[280px] bg-[#ececec] border-[1px] border-[#a2a2a2] rounded-[8px]">
+                        <img class="w-[220px]"  src="https://ik.imagekit.io/olky6f0qm/ai_with_predictive_maintenance_illustration-removebg-preview.png?updatedAt=1696730119718" alt="" srcset="">
+                        <h3 class="text-[28px] font-medium plex-sans">Robotics</h3>
+                    </div>
+
+                    <div onclick='chooseSkills(this)' class="skill-con flex flex-col justify-around items-center gap-y-4 w-[280px] h-[280px] bg-[#ececec] border-[1px] border-[#a2a2a2] rounded-[8px]">
+                        <img class="w-[220px]"  src="https://ik.imagekit.io/olky6f0qm/astrophysics-isometric-background-composition-with-astronomer-observing-colorful-planets-galaxy-celestial-bodies-with-optical-telescope-illustration_1284-29352-removebg-preview.png?updatedAt=1696730538060" alt="" srcset="">
+                        <h3 class="text-[28px] font-medium plex-sans">Astrophysics</h3>
+                    </div>
+
+                    <div onclick='chooseSkills(this)' class="skill-con flex flex-col justify-around items-center gap-y-4 w-[280px] h-[280px] bg-[#ececec] border-[1px] border-[#a2a2a2] rounded-[8px]">
+                        <img class="w-[220px]"  src="https://ik.imagekit.io/olky6f0qm/cute-artificial-intelligence-robot-isometric-icon_1284-63045-removebg-preview.png?updatedAt=1696730707416" alt="" srcset="">
+                        <h3 class="text-[28px] font-medium plex-sans">AI/ML</h3>
+                    </div>
+
+                    <div onclick='chooseSkills(this)' class="skill-con flex flex-col justify-around items-center gap-y-4 w-[280px] h-[280px] bg-[#ececec] border-[1px] border-[#a2a2a2] rounded-[8px]">
+                        <img class="w-[220px]"  src="https://ik.imagekit.io/olky6f0qm/colourful-science-work-with-molecules_23-2148539572-removebg-preview.png?updatedAt=1696730828648" alt="" srcset="">
+                        <h3 class="text-[28px] font-medium plex-sans">Open science</h3>
+                    </div>
+
+                    <div onclick='chooseSkills(this)' class="skill-con flex flex-col justify-around items-center gap-y-4 w-[280px] h-[280px] bg-[#ececec] border-[1px] border-[#a2a2a2] rounded-[8px]">
+                        <img class="w-[220px]"  src="https://ik.imagekit.io/olky6f0qm/flat-design-cms-concept-illustrated_23-2148796510-removebg-preview.png?updatedAt=1696731054747" alt="" srcset="">
+                        <h3 class="text-[28px] font-medium plex-sans">Computer science</h3>
+                    </div>
+
+                    <div onclick='chooseSkills(this)' class="skill-con flex flex-col justify-around items-center gap-y-4 w-[280px] h-[280px] bg-[#ececec] border-[1px] border-[#a2a2a2] rounded-[8px]">
+                        <img class="w-[220px]"  src="https://ik.imagekit.io/olky6f0qm/programmer-working-flat-style_52683-15041-removebg-preview.png?updatedAt=1696731310480" alt="" srcset="">
+                        <h3 class="text-[28px] font-medium plex-sans">Web development</h3>
+                    </div>
+                </div>
+                {{!-- skills  --}}
+<br>
+<br>
+                {{!-- Next  --}}
+                <div class="flex flex-col justify-center items-center">
+                    <a href='/dashboard' class="bg-black w-[350px] text-white p-3 px-[80px] text-[22px] text-center rounded-full">Next</a>
+                </div>
+                {{!-- Next  --}}
+                <br>
+                <br>
+            </div>
+            {{!-- fixed section  --}}
+
+        </div>
+{{!-- full page  --}}
+</div>
+
+<script src="/data/js/landing.js"></script>
+</body>
+</html>

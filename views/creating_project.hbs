@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/data/output.css">
+    <link rel="stylesheet" href="/data/css/general.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Keania+One&family=Source+Code+Pro&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@600&family=IBM+Plex+Sans:wght@500&family=Keania+One&family=Montserrat:wght@600&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <title>OpenSpace</title>
+</head>
+<body>
+<div class=" h-screen relativ f">
+
+{{!-- full page  --}}
+                    {{!-- logo  --}}
+                    <div class="px-[60px] text-white py-[20px] bg-black flex justify-between">
+
+                        <div class="flex items-center gap-x-7">
+                    <h1 class="text-[30px] font-semibold tracking-[2px] f text-white">Open<span id="header-text">Space</span></h1>
+                    {{!-- search --}}
+                    <div class="flex"><input placeholder="Projects" class="text-black px-[20px] py-2 rounded-l-[5px] outline-none text-[20px]" type="text"><button class="p-1 f px-4 bg-[#5C61F3] rounded-r-[5px] text-[20px]">Search</button></div>
+                    {{!-- search --}}
+                    
+                    </div>
+
+                    <div>
+                                           
+                    <i class="bi bi-person-circle text-[45px] p-[5px] px-[15px] rounded-full"></i>
+
+                    </div>
+
+                    </div>
+                    {{!-- logo  --}}
+
+
+
+                    <div class="margin-fixed">
+                    {{!-- fixed  --}}
+                  <a href="/dashboard">  <i class="bi bi-arrow-left text-[30px]"></i> </a>
+                    {{!-- title  --}}
+                    <div>
+                        <h1 class="text-[60px] f font-semibold">Create your own Project</h1>
+                    </div>
+                    {{!-- title  --}}
+
+
+
+
+                    {{!-- form  --}}
+                    <div class="w-[600px]">
+                        <form action="#" class="flex create-form flex-col gap-y-[20px] w-min">
+                            <div class="bg-[#f1f1f1] p-4  border-[1px] border-[#d3d3d3]  rounded-xl flex flex-col">
+                            <label class="label" for="tname">Team Name</label>
+                            <input id="tname" required type="text">
+                            </div>              
+
+                            <div class="bg-[#f1f1f1] p-4 border-[1px] border-[#d3d3d3]  rounded-xl flex flex-col">
+                             <label class="label" for="cs">Challenge statement</label>
+                            <input required id="cs" type="text" class="">
+                            </div>    
+                            {{!-- skills selection  --}}
+                            <div class="flex flex-col gap-y-4">
+                                <div class="text-[25px]">Desired Skills</div>
+                                <div class="skill-s-p w-[100%] gap-3 flex-wrap flex rounded-xl bg-[#f1f1f1] p-4 border-[1px] border-[#d3d3d3]">
+                                    <p onclick='chooseSkills2(this)'>Coding</p><p onclick='chooseSkills2(this)'>UI/UX</p><p onclick='chooseSkills2(this)'>AI/ML</p><p onclick='chooseSkills2(this)'>Web Development</p><p onclick='chooseSkills2(this)'>Robotics</p>
+                                </div>
+                                <div class="text-[20px] underline">See all</div>
+                            </div>
+                            {{!-- skills selection  --}}
+
+                            {{!-- description --}}
+                            <div>
+                                <p class="label ">Description</p>
+                                <textarea class="border-[1px] border-black rounded-md p-2" cols="60" rows="5" required></textarea>
+                            </div>
+                            {{!-- description --}}
+
+                            {{!-- submit  --}}
+                            <button type="submit" class="bg-black text-white w-[200px] p-3 rounded-full">CREATE TEAM</button>
+                            {{!-- submit  --}}
+                        </form>
+                        <br>
+                    </div>
+                    {{!-- form  --}}
+                   
+                    {{!-- fixed  --}}
+                    </div>
+
+
+        </div>
+{{!-- full page  --}}
+</div>
+
+<script src="/data/js/landing.js"></script>
+</body>
+</html>

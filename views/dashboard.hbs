@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/data/output.css">
+    <link rel="stylesheet" href="/data/css/general.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Keania+One&family=Source+Code+Pro&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@600&family=IBM+Plex+Sans:wght@500&family=Keania+One&family=Montserrat:wght@600&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <title>OpenSpace</title>
+</head>
+<body>
+<div class=" h-screen relativ f">
+
+{{!-- full page  --}}
+                    {{!-- logo  --}}
+                    <div class="px-[60px] text-white py-[20px] bg-black flex justify-between">
+                        <div class="flex items-center gap-x-7">
+                    <h1 class="text-[30px] font-semibold tracking-[2px] f text-white">Open<span id="header-text">Space</span></h1>
+                    {{!-- search --}}
+                    <div class="flex"><input placeholder="Projects" class="text-black px-[20px] py-2 rounded-l-[5px] outline-none text-[20px]" type="text"><button class="p-1 f px-4 bg-[#5C61F3] rounded-r-[5px] text-[20px]">Search</button></div>
+                    {{!-- search --}}
+
+                    {{!-- Create Project  --}}
+                    <div class="flex flex-col justify-center">
+                        <a href='/dashboard/create' class="text-[20px] p-2 px-6 bg-white text-black font-medium rounded-[5px]">Create</a>
+                    </div>
+                    {{!-- Create Project  --}}
+                    </div>
+
+
+                    <div>
+                                           
+                    <i class="bi bi-person-circle text-[45px] p-[5px] px-[15px] rounded-full"></i>
+
+                    </div>
+
+                    </div>
+                    {{!-- logo  --}}
+
+
+
+                    <div class="margin-fixed">
+                    {{!-- fixed  --}}
+
+                    {{!-- suggested topics  --}}
+                    <div class="flex gap-x-10 text-[23px] py-3 justify-center overflow-auto pr-5">
+                        <a href='#data_title' onclick="chooseSkills3(this)" class="all w-max flex-shrink-0 cursor-pointer f">All</a>
+                        <a href='#data_title' onclick="chooseSkills3(this)" class="w-max flex-shrink-0 cursor-pointer f">Coding</a>
+                        <a href='#data_title' onclick="chooseSkills3(this)" class="w-max flex-shrink-0 cursor-pointer f">Open source</a>
+                        <a href='#data_title' onclick="chooseSkills3(this)" class="w-max flex-shrink-0 cursor-pointer f">Astrophysics</a>
+                        <a href='#data_title' onclick="chooseSkills3(this)" class="w-max flex-shrink-0 cursor-pointer f">Robotics</a>
+                        <a href='#data_title' onclick="chooseSkills3(this)" class="w-max flex-shrink-0 cursor-pointer f">Ui/Ux</a>
+                        <a href='#data_title' onclick="chooseSkills3(this)" class="w-max flex-shrink-0 cursor-pointer f">Web development</a>
+                        <a href='#data_title' onclick="chooseSkills3(this)" class="w-max flex-shrink-0 cursor-pointer f">Computer science</a>
+                        <a href='#data_title' onclick="chooseSkills3(this)" class="w-max flex-shrink-0 cursor-pointer f">Ai/Ml</a>
+                    </div>
+                    {{!-- suggested topics  --}}
+    <br>
+    <br>
+                     {{!-- greetingtitle  --}}
+                     <div>
+                        <h1 class="text-[50px] font-semibold tracking-[1px] f" style="word-spacing: 0px;">Hey there, <span class="text-[60px] font-semibold">Tanish</span></h1>
+                        <h1 class="text-[50px] font-semibold tracking-[1px] f text-[gray]" style="word-spacing: 0px;">Project available <span class="text-[#5C61F3] font-semibold">Near you</span></h1>
+                     </div>
+                     {{!-- greetingtitle  --}}
+
+<br>
+<br> 
+<br> 
+                     {{!-- Recommenditation  --}}
+                     <div class="bg-[#f0f0f0] p-8 rounded-xl h-[800px] overflow-auto">
+                        <div class="flex justify-between items-center">
+                            <div class="text-[50px] f font-semibold text-gray-700">Recommended for you</div>
+                            <div onclick="seeAllRecomm(this)" class="text-[25px] cursor-pointer text-gray-700">See more</div>
+                        </div>
+
+<br>
+            {{!-- suggested options  --}}
+            <div class="flex gapx-10 flex-wrap justify-center gap-10 containerRecomm">
+{{!-- option 1 --}}
+                            <div class="w-[300px] flex-shrink-0 h-[350px] border-[1px] border-[#a0a0a0] bg-[#e2e2e2] rounded-xl p-4">
+
+                                <div class="bg-[#bbbbbb] h-[150px] rounded-xl">
+                                    <span class="bg-black"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-[25px] font-semibold">Project 1</h3>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                </div>
+
+                        </div>
+{{!-- option 1 --}}
+
+
+
+{{!-- option 1 --}}
+                            <div class="w-[300px] flex-shrink-0 h-[350px] border-[1px] border-[#a0a0a0] bg-[#e2e2e2] rounded-xl p-4">
+
+                                <div class="bg-[#bbbbbb] h-[150px] rounded-xl">
+                                    <span class="bg-black"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-[25px] font-semibold">Project 1</h3>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                </div>
+
+                            </div>
+{{!-- option 1 --}}
+
+
+{{!-- option 1 --}}
+                            <div class="w-[300px] flex-shrink-0 h-[350px] border-[1px] border-[#a0a0a0] bg-[#e2e2e2] rounded-xl p-4">
+
+                                <div class="bg-[#bbbbbb] h-[150px] rounded-xl">
+                                    <span class="bg-black"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-[25px] font-semibold">Project 1</h3>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                </div>
+
+                            </div>
+{{!-- option 1 --}}
+
+
+
+
+
+
+{{!-- option 1 --}}
+                            <div class="w-[300px] flex-shrink-0 h-[350px] border-[1px] border-[#a0a0a0] bg-[#e2e2e2] rounded-xl p-4">
+
+                                <div class="bg-[#bbbbbb] h-[150px] rounded-xl">
+                                    <span class="bg-black"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-[25px] font-semibold">Project 1</h3>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                </div>
+
+                            </div>
+{{!-- option 1 --}}
+
+
+
+
+
+
+{{!-- option 1 --}}
+                            <div class="w-[300px] flex-shrink-0 h-[350px] border-[1px] border-[#a0a0a0] bg-[#e2e2e2] rounded-xl p-4">
+
+                                <div class="bg-[#bbbbbb] h-[150px] rounded-xl">
+                                    <span class="bg-black"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-[25px] font-semibold">Project 1</h3>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                </div>
+
+                            </div>
+{{!-- option 1 --}}
+
+
+
+
+{{!-- option 1 --}}
+                            <div class="w-[300px] flex-shrink-0 h-[350px] border-[1px] border-[#a0a0a0] bg-[#e2e2e2] rounded-xl p-4">
+
+                                <div class="bg-[#bbbbbb] h-[150px] rounded-xl">
+                                    <span class="bg-black"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-[25px] font-semibold">Project 1</h3>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                </div>
+
+                            </div>
+{{!-- option 1 --}}
+
+
+
+{{!-- option 1 --}}
+                            <div class="w-[300px] flex-shrink-0 h-[350px] border-[1px] border-[#a0a0a0] bg-[#e2e2e2] rounded-xl p-4">
+
+                                <div class="bg-[#bbbbbb] h-[150px] rounded-xl">
+                                    <span class="bg-black"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-[25px] font-semibold">Project 1</h3>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                </div>
+
+                            </div>
+{{!-- option 1 --}}
+
+
+
+
+{{!-- option 1 --}}
+                            <div class="w-[300px] flex-shrink-0 h-[350px] border-[1px] border-[#a0a0a0] bg-[#e2e2e2] rounded-xl p-4">
+
+                                <div class="bg-[#bbbbbb] h-[150px] rounded-xl">
+                                    <span class="bg-black"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-[25px] font-semibold">Project 1</h3>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                    <p>Ram Ram bhaiyo</p>
+                                </div>
+
+                            </div>
+{{!-- option 1 --}}
+
+
+
+                </div>
+            {{!-- suggested optins  --}}
+
+
+
+                     </div>
+                     {{!-- Recommenditation  --}}
+<br>
+<br>
+
+
+
+                {{!-- user's choosen datat  --}}
+                <div>
+                {{!-- title  --}}
+                <div id="data_title" class="text-[50px] f font-semibold text-gray-700">All</div>
+                {{!-- title  --}}
+<br>
+                {{!-- data  --}}
+                <div class="flex flex-col gap-[30px]">
+
+
+
+{{!-- option 1 --}}
+                            <div class="flex-shrink-0 flex h-[300px] gap-5 border-[1px] border-[#a0a0a0] bg-[#e2e2e2] rounded-xl ">
+
+                                <div class="bg-[#bbbbbb] h-[300px] w-[300px] flex-shrink-0 rounded-xl">
+                                    <span class="bg-black"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-[45px] font-semibold">Project 1</h3>
+                                    <p class="text-[18px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, molestiae excepturi obcaecati iste quod voluptate voluptatem veniam aperiam voluptatum illo neque ratione, reiciendis placeat quis saepe vero! Sequi labore quam distinctio id aspernatur. Architecto maiores soluta voluptate nulla. Sapiente qui repellendus consectetur a tempora totam labore impedit consequatur harum, ipsum voluptas. Voluptates, quo cupiditate! Illo, delectus soluta. Quam sapiente non iusto commodi. Aspernatur quis cum corrupti, incidunt, autem ipsam nobis unde minus libero, illum consectetur. Praesentium, accusantium laboriosam! Voluptates pariatur nobis eum culpa quis necessitatibus, molestiae magnam nam natus velit illum .</p>
+                                </div>
+
+                            </div>
+{{!-- option 1 --}}
+
+
+{{!-- option 1 --}}
+                            <div class="flex-shrink-0 flex h-[300px] gap-5 border-[1px] border-[#a0a0a0] bg-[#e2e2e2] rounded-xl ">
+
+                                <div class="bg-[#bbbbbb] h-[300px] w-[300px] flex-shrink-0 rounded-xl">
+                                    <span class="bg-black"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-[45px] font-semibold">Project 1</h3>
+                                    <p class="text-[18px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, molestiae excepturi obcaecati iste quod voluptate voluptatem veniam aperiam voluptatum illo neque ratione, reiciendis placeat quis saepe vero! Sequi labore quam distinctio id aspernatur. Architecto maiores soluta voluptate nulla. Sapiente qui repellendus consectetur a tempora totam labore impedit consequatur harum, ipsum voluptas. Voluptates, quo cupiditate! Illo, delectus soluta. Quam sapiente non iusto commodi. Aspernatur quis cum corrupti, incidunt, autem ipsam nobis unde minus libero, illum consectetur. Praesentium, accusantium laboriosam! Voluptates pariatur nobis eum culpa quis necessitatibus, molestiae magnam nam natus velit illum .</p>
+                                </div>
+
+                            </div>
+{{!-- option 1 --}}
+
+
+{{!-- option 1 --}}
+                            <div class="flex-shrink-0 flex h-[300px] gap-5 border-[1px] border-[#a0a0a0] bg-[#e2e2e2] rounded-xl ">
+
+                                <div class="bg-[#bbbbbb] h-[300px] w-[300px] flex-shrink-0 rounded-xl">
+                                    <span class="bg-black"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-[45px] font-semibold">Project 1</h3>
+                                    <p class="text-[18px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, molestiae excepturi obcaecati iste quod voluptate voluptatem veniam aperiam voluptatum illo neque ratione, reiciendis placeat quis saepe vero! Sequi labore quam distinctio id aspernatur. Architecto maiores soluta voluptate nulla. Sapiente qui repellendus consectetur a tempora totam labore impedit consequatur harum, ipsum voluptas. Voluptates, quo cupiditate! Illo, delectus soluta. Quam sapiente non iusto commodi. Aspernatur quis cum corrupti, incidunt, autem ipsam nobis unde minus libero, illum consectetur. Praesentium, accusantium laboriosam! Voluptates pariatur nobis eum culpa quis necessitatibus, molestiae magnam nam natus velit illum .</p>
+                                </div>
+
+                            </div>
+{{!-- option 1 --}}
+
+
+{{!-- option 1 --}}
+                            <div class="flex-shrink-0 flex h-[300px] gap-5 border-[1px] border-[#a0a0a0] bg-[#e2e2e2] rounded-xl ">
+
+                                <div class="bg-[#bbbbbb] h-[300px] w-[300px] flex-shrink-0 rounded-xl">
+                                    <span class="bg-black"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-[45px] font-semibold">Project 1</h3>
+                                    <p class="text-[18px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, molestiae excepturi obcaecati iste quod voluptate voluptatem veniam aperiam voluptatum illo neque ratione, reiciendis placeat quis saepe vero! Sequi labore quam distinctio id aspernatur. Architecto maiores soluta voluptate nulla. Sapiente qui repellendus consectetur a tempora totam labore impedit consequatur harum, ipsum voluptas. Voluptates, quo cupiditate! Illo, delectus soluta. Quam sapiente non iusto commodi. Aspernatur quis cum corrupti, incidunt, autem ipsam nobis unde minus libero, illum consectetur. Praesentium, accusantium laboriosam! Voluptates pariatur nobis eum culpa quis necessitatibus, molestiae magnam nam natus velit illum .</p>
+                                </div>
+
+                            </div>
+{{!-- option 1 --}}
+
+
+{{!-- option 1 --}}
+                            <div class="flex-shrink-0 flex h-[300px] gap-5 border-[1px] border-[#a0a0a0] bg-[#e2e2e2] rounded-xl ">
+
+                                <div class="bg-[#bbbbbb] h-[300px] w-[300px] flex-shrink-0 rounded-xl">
+                                    <span class="bg-black"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-[45px] font-semibold">Project 1</h3>
+                                    <p class="text-[18px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, molestiae excepturi obcaecati iste quod voluptate voluptatem veniam aperiam voluptatum illo neque ratione, reiciendis placeat quis saepe vero! Sequi labore quam distinctio id aspernatur. Architecto maiores soluta voluptate nulla. Sapiente qui repellendus consectetur a tempora totam labore impedit consequatur harum, ipsum voluptas. Voluptates, quo cupiditate! Illo, delectus soluta. Quam sapiente non iusto commodi. Aspernatur quis cum corrupti, incidunt, autem ipsam nobis unde minus libero, illum consectetur. Praesentium, accusantium laboriosam! Voluptates pariatur nobis eum culpa quis necessitatibus, molestiae magnam nam natus velit illum .</p>
+                                </div>
+
+                            </div>
+{{!-- option 1 --}}
+
+
+{{!-- option 1 --}}
+                            <div class="flex-shrink-0 flex h-[300px] gap-5 border-[1px] border-[#a0a0a0] bg-[#e2e2e2] rounded-xl ">
+
+                                <div class="bg-[#bbbbbb] h-[300px] w-[300px] flex-shrink-0 rounded-xl">
+                                    <span class="bg-black"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-[45px] font-semibold">Project 1</h3>
+                                    <p class="text-[18px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, molestiae excepturi obcaecati iste quod voluptate voluptatem veniam aperiam voluptatum illo neque ratione, reiciendis placeat quis saepe vero! Sequi labore quam distinctio id aspernatur. Architecto maiores soluta voluptate nulla. Sapiente qui repellendus consectetur a tempora totam labore impedit consequatur harum, ipsum voluptas. Voluptates, quo cupiditate! Illo, delectus soluta. Quam sapiente non iusto commodi. Aspernatur quis cum corrupti, incidunt, autem ipsam nobis unde minus libero, illum consectetur. Praesentium, accusantium laboriosam! Voluptates pariatur nobis eum culpa quis necessitatibus, molestiae magnam nam natus velit illum .</p>
+                                </div>
+
+                            </div>
+{{!-- option 1 --}}
+
+                </div>
+                {{!-- data  --}}
+
+
+                </div>
+                {{!-- user's choosen datat  --}}
+
+
+
+
+
+
+                    {{!-- fixed  --}}
+                    </div>
+
+
+        </div>
+{{!-- full page  --}}
+</div>
+
+<script defer src="/data/js/landing.js"></script>
+</body>
+</html>
