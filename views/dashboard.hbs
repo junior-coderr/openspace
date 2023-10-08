@@ -47,7 +47,7 @@
 
 
 
-                    <div class="margin-fixed">
+                    <div class="margin-fixed relative">
                     {{!-- fixed  --}}
 
                     {{!-- suggested topics  --}}
@@ -386,10 +386,71 @@
                     </div>
 
 
+{{!-- another page  --}}
+<div class="projectPage overflow-auto fixed w-full h-screen bg-white top-0 left-0">
+    <div class="margin-fixed">
+
+
+        <div class="flex items-center gap-[5px]">
+        <i class="bi bi-arrow-left text-[35px]" onclick="backfromproject()"></i>
+        <p class="text-[25px]">Open source</p>
+       </div>
+
+       <br><br>
+        {{!-- top title  --}}
+    <div class="flex flex-col gap-[20px]">
+        <h1 class="font-bold text-[55px]">Project Name</h1>
+        <div>
+
+        <button class="p-2 px-5 text-[20px] flex border-[1px] border-[green] rounded-full">Join Now</button>
+        </div>
+     </div>
+
+        {{!-- top title  --}}
+
+
+<br>
+
+{{!-- info section  --}}
+        <div class="flex justify-between">
+
+            <div class="p-[40px] border-[1px] border-[black] w-[50%] rounded-xl">
+                <h2 class="text-[50px] font-bold">Team Info</h2>
+                <p class="text-[35px] font-bold text-gray-600">Challenge</p>
+
+              
+                    <h3>Desired Skills</h3>
+                <div>
+                   {{!-- All the required skills --}}
+                </div>
+            </div>
+
+  
+        </div>
+
+{{!-- info section  --}}
+
+<br>
+<br>
+{{!-- description  --}}
+        <div class="w-[550px]">
+            <h1 class="text-[45px] font-semibold">Description</h1>
+            <div class="border-[1px] border-black p-[30px] rounded-xl">
+                <p class="text-[23px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt itaque rem id accusantium rerum blanditiis, exercitationem similique molestias nam suscipit, dolore, eligendi tempore possimus cum. Enim consequatur corrupti modi veniam?</p>
+            </div>
+        </div>
+{{!-- description  --}}
+
+    </div>
+</div>
+{{!-- another page  --}}
+
+
+
+
         </div>
 {{!-- full page  --}}
 </div>
-
 <script defer src="/data/js/landing.js"></script>
 </body>
 </html>

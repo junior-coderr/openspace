@@ -11,9 +11,16 @@ console.log('================================');
 });
 
 }
-
+let skillSelected=[];
 function chooseSkills(e){
 e.classList.toggle('skill-true');
+console.log(e.className);
+if(e.className=="skill-true"){
+skillSelected.push(e.innerText);
+}else{
+   skillSelected.splice(skillSelected.indexOf(e.innerText)); 
+}
+console.log(skillSelected);
 }
 
 function chooseSkills2(e){
@@ -25,7 +32,7 @@ let already=null;
 const data_title = document.querySelector('#data_title');
 
 function chooseSkills3(e){
-data_title.innerText = e.textContent;
+data_title.innerText = e.innerText;
     console.log(data_title.innerText);
 
     if(already==null){
@@ -45,7 +52,7 @@ chooseSkills3(all);
 
 
 function seeAllRecomm(e){
-if(e.innerText=='See all'){
+if(e.innerText=='See more'){
 const recommandBar =e.parentNode.parentNode;
 recommandBar.style.height="100%";
 e.innerText='See less';
@@ -78,8 +85,21 @@ h3.innerText='Hello World!!'
 
 p.addEventListener('click',()=>{
 
+    backfromproject();
+
 });
 
 }
 
-// createElements()
+createElements();
+
+const projectPage = document.querySelector('.projectPage');
+
+function backfromproject(){
+projectPage.classList.toggle('hidden');
+}
+backfromproject()
+
+
+
+
